@@ -1,0 +1,108 @@
+&input_file_info
+input_file_dir = '/gpfs/fs1/home/student/guoyk/Program/EnKF_LDA/src',
+ens_file_head = 'wrfinput',
+domain_num  = 1,
+time_num   = 1,
+/
+&dimension_info
+nx = 100,
+ny = 140,
+nz = 28,
+dx = 64000,
+dy = 64000,
+/
+&ensemble_info
+ens_num   = 10,
+stdu_init = 0,
+stdv_init = 0,
+stdw_init = 0,
+stdph_init= 0,
+stdt_init = 0,
+stdqv_init= 0, 
+stdqr_init= 0.0,
+stdqs_init= 0.0,
+stdqg_init= 0.0,
+stdphi_init=0
+stdpsi_init=0
+stdsmois_init=0,
+stdtslb_init=0,
+stdtsk_init=1,
+opt_pert = 1,
+pert_cx  = 0,
+pert_cy  = 0,
+pert_radius = 0,
+enable_recurfilt=0
+ipass_filt= 4
+hradius=0
+nradius_z= 0
+/
+&analysis_info
+enable_eof      = 0,
+check_eof       = 0,
+enable_inflat   = 0,
+inflat_opt      = 0,
+coef_inflat     = 0.2
+ratio_af        = 0.2
+enable_local    = 1,
+optlocal        = 1,
+local_dis       = 20000.0,
+verti_dis       = 10000.0,
+local_dis_w     = 15000.0
+verti_dis_w     = 10000.0
+local_dis_ph    = 15000.0
+verti_dis_ph    = 10000.0
+local_dis_t     = 15000.0
+verti_dis_t     = 10000.0
+local_dis_hydro = 1000.0
+verti_dis_hydro = 0.1
+local_dis_soil  = 30000
+verti_dis_soil  = 10
+enable_rms_anal = 1
+opt_rms         = 0
+opt_rms_rad     = 0
+enable_rm_correlation_rv=0
+enable_rm_correlation_rf=0
+enable_thinning = 1
+th_num = 5
+/
+&obs_info
+enable_sim = 0,
+enable_real = 1,
+obs_type   = 3,
+sim_obs_den = 0,
+radar_num  = 0,
+obs_file_dir = '/gpfs/fs1/home/student/guoyk/Program/EnKF_LDA/obs_real',
+obs_err_u   = 1,
+obs_err_v   = 1,
+obs_err_w   = 0.5,
+obs_err_ph  = 20,
+obs_err_t   = 1,
+obs_err_qv  = 1e-5,
+obs_err_qr  = 1e-5,
+obs_err_qi  = 1e-5,
+obs_err_qs  = 1e-5,
+obs_err_qgr = 1e-5,
+obs_err_rv  = 2,
+obs_err_rf  = 2,
+obs_err_smois =0.1
+obs_err_tslb  =0.01
+obs_err_tsk = 0.1
+assim_u     = 0
+assim_v     = 0
+assim_w     = 0
+assim_ph    = 0
+assim_t     = 0
+assim_qv    = 0
+assim_qr    = 0
+assim_qi    = 0
+assim_qs    = 0
+assim_qgr   = 0 
+assim_rv    = 0
+assim_rf    = 0,
+assim_smois = 0,
+assim_tslb  = 0,
+assim_tsk   = 1,
+ob_rv_threshold= 0,
+ob_rf_threshold= 0,
+miss_data   = -99999
+/

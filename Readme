@@ -1,0 +1,32 @@
+
+---------------             Collected EnSRF                                  ----------
+---------------             ORIGINAL BY Wang Shizhang                        ----------
+---------------             modified by Guo yakai                            ----------
+
+===================================== DESCIPTION OF THIS CODE Version==============================================
+              Purpose:                         DATA ASSIMILATION  with Ensemble Square-Root Filter
+              FEATURES:         can deal with  formatted RADAR, SOUNDING AND LAND SURFACE(SOIL LAYER) observations
+              PRE REQUEST:                     INTEL FORTRAN, NETCDF3, WRFV3
+
+
+=========== FOR BEGGINNERS===============
+1----- How to compile ?
+  FOLLOW THESE STEPS:
+  step1: cd ./src/
+  step2: change the path of makeflie like: netcdf_path, compiler_options
+  step3: make (or make clean)
+ 
+any run problems, please contact with yokonuist@gmail.com
+
+2---- How to run a case ?
+
+ if 1 is finised, can obtain an ideal data to contine
+
+ or, usrs are encouraged to add their own data or methods, which is actually easy when u know how to run a case
+
+===============
+
+At last, please confirm the purpose of your every step.
+
+Enjoy!
+----------------                2017/4/6                                     ----------
